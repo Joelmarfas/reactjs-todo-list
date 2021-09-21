@@ -1,0 +1,24 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.li:hover{
+    font-weight: bold;
+}

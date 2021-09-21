@@ -1,14 +1,14 @@
 import React from "react";
-import { FaBeer } from "react-icons/fa";
+import { TiDelete } from "react-icons/ti";
 import styles from "./TodoItem.module.scss";
 
 export function TodoItem({ task }) {
   const { title } = task;
   return (
     <li className={styles.item}>
-      <FaBeer className={styles.fa} />
-      <input type="checkbox" />
-      {title}
+      <input type="checkbox" className={styles.fa} />
+      <div className={styles.div}>{title}</div>
+      <TiDelete className={styles.ti} />
     </li>
   );
 }

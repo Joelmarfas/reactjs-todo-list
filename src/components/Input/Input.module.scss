@@ -4,6 +4,7 @@
   width: 100%;
   border-radius: 5px;
   background-color:white;
+  padding: 15px;
 }
 
 .input:focus {
@@ -16,11 +17,11 @@
   width: 100%;
   background-color:white;
   border-radius: 5px;
-  padding: 15px 0;
   border: none;
 }
 
 .fa{
   color: black;
   margin: 10px;
+  cursor: pointer;
 }

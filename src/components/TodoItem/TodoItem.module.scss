@@ -3,9 +3,30 @@
   color: black;
   width: 100%;
   padding: 15px;
+  border-bottom: 1px gray solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa {
   color: black;
-  margin: 10px;
+  cursor: pointer;
+  width: 10%;
+}
+
+.div{
+  width: 80%;
+  cursor: pointer;
+}
+
+.div:hover{
+  font-weight: bold;
+}
+
+.ti{
+  width: 10%;
+  cursor: pointer;
 }

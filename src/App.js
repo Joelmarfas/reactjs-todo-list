@@ -12,9 +12,9 @@ function App() {
         <Input />
         <TodoList
           todos={[
-            { id: 1, title: "tarea 1" },
-            { id: 2, title: "tarea 2" },
-            { id: 3, title: "tarea 3" },
+            { id: 1, title: "Task 1" },
+            { id: 2, title: "Task 2" },
+            { id: 3, title: "Task 3" },
           ]}
         />
       </main>
