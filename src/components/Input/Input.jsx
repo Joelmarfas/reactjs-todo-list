@@ -1,10 +1,14 @@
 import React from "react";
+import { FaBeer } from "react-icons/fa";
 import styles from "./Input.module.scss";
 
 export function Input() {
   return (
     <>
-      <input className={styles.input} type="text" placeholder="New Task" />
+      <li className={styles.li}>
+        <FaBeer className={styles.fa} />
+        <input className={styles.input} type="text" placeholder="New Task" />
+      </li>
     </>
   );
 }
