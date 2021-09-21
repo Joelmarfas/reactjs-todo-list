@@ -1,7 +1,7 @@
-.TodoList {
+.main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    width: 100%;
+    width: 400px;
 }
