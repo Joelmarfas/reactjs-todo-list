@@ -5,3 +5,10 @@
   align-items: center;
   width: 500px;
 }
+
+@media (max-width: 560px) {
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

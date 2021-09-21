@@ -5,3 +5,9 @@
     font-weight: bold;
 }
 
+@media (max-width: 560px) {
+    .title {
+        width: 90%;
+        margin: 50px auto;
+    }
+}
