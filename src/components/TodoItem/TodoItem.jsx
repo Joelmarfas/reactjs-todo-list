@@ -1,14 +1,23 @@
 import React from "react";
-// import { TiDelete } from "react-icons/ti";
+import { TiDelete } from "react-icons/ti";
 import styles from "./TodoItem.module.scss";
 
-export function TodoItem({ task }) {
-  const { title } = task;
+export function TodoItem(props) {
+  const {
+    onChange,
+    data: { id, description, done },
+  } = props;
   return (
     <li className={styles.item}>
-      <input type="checkbox" className={styles.fa} />
-      <div className={styles.div}>{title}</div>
-      {/* <TiDelete className={styles.ti} /> */}
+      <input
+        className={styles.fa}
+        name={id}
+        type="checkbox"
+        defaultChecked={done}
+        onChange={onChange}
+      />
+      <div className={styles.div}>{description}</div>
+      <TiDelete className={styles.ti} />
     </li>
   );
 }

@@ -22,3 +22,9 @@
 .li:hover{
     font-weight: bold;
 }
+
+@media (max-width: 560px) {
+    .footer {
+        font-size: 0.6rem;
+    }
+}
