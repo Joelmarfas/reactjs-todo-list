@@ -1,5 +1,5 @@
 import React from "react";
-import { TiDelete } from "react-icons/ti";
+// import { TiDelete } from "react-icons/ti";
 import styles from "./TodoItem.module.scss";
 
 export function TodoItem({ task }) {
@@ -8,7 +8,7 @@ export function TodoItem({ task }) {
     <li className={styles.item}>
       <input type="checkbox" className={styles.fa} />
       <div className={styles.div}>{title}</div>
-      <TiDelete className={styles.ti} />
+      {/* <TiDelete className={styles.ti} /> */}
     </li>
   );
 }
