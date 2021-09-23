@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TodoList.module.scss";
-import { ListFooter } from "../ListFooter/ListFooter";
+// import { ListFooter } from "../ListFooter/ListFooter";
 import { TodoItem } from "../TodoItem/TodoItem";
 
 export function TodoList(props) {
@@ -25,14 +25,16 @@ export function TodoList(props) {
   return (
     <ul className={styles.TodoList}>
       {list.length ? chk : "Can create your first todo to get started"}
-      {list.length ? (
-        <p>
-          <button type="button" onClick={onClickRemoveItem}>
-            Delete all done
-          </button>
-        </p>
-      ) : null}
-      <ListFooter />
+
+      <p>{list.length} Items left</p>
+      <p>{list.length} Items active</p>
+      <p>{list.length} Items completed</p>
+
+      <p>
+        <button type="button" onClick={onClickRemoveItem}>
+          Delete all done
+        </button>
+      </p>
     </ul>
   );
 }

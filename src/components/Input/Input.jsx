@@ -2,20 +2,27 @@ import React, { useState } from "react";
 import styles from "./Input.module.scss";
 
 export function Input(props) {
-  const { handleAddItem } = props;
+  const { taskToAdd } = props;
   const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleAddItem({
+    taskToAdd({
       done: false,
-      id: (+new Date()).toString(),
+      id: new Date().toString(),
       description,
     });
     setDescription("");
   };
+
+  const noTask = (e) => {
+    e.preventDefault();
+    // eslint-disable-next-line no-alert
+    alert("no task");
+  };
+
   return (
-    <form className={styles.li} onSubmit={handleSubmit}>
+    <form className={styles.li} onSubmit={description ? handleSubmit : noTask}>
       <input type="checkbox" className={styles.fa} />
       <input
         type="text"

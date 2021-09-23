@@ -10,12 +10,11 @@ function App() {
   const handleAddItem = (addItem) => {
     setList([...list, addItem]);
   };
-
   return (
     <>
       <Title />
       <main className={styles.main}>
-        <Input handleAddItem={handleAddItem} />
+        <Input taskToAdd={handleAddItem} />
         <TodoList list={list} setList={setList} />
       </main>
     </>

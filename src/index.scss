@@ -14,8 +14,9 @@ body {
 }
 
 @media (max-width: 560px) {
-  body {
+  .root {
     font-size: 12px;
-  }
+    width: 100%;
+   }
 }
 
